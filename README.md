@@ -1,18 +1,21 @@
 # ORM
- orm pour intéragir avec sqlite
+orm() pour intéragir avec sqlite
 
 from db_orm import *
 
-#creation de la table Eleve
+#creation de la table Eleve/ creation table Eleve
+
 class  Eleve(SqlBase):
+
     nom=StringField
     classe=StringField
     age=IntField
     moyenne=FloatField
 
-
-Eleve.run()
 #Ajout d'élements
+
+
+
 
 Eleve.add(nom='sam',
           classe='TleD',
